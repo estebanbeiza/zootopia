@@ -3,17 +3,17 @@ package Ejercicio2;
 public class AnimalesTerrestres extends Animales {
 	private int cantidadPatas;
 	private String tipoAlimentacion;
-	private String horasSueno;
+	private int horasSueno;
 	
 	AnimalesTerrestres () {
 		super();
 		this.cantidadPatas = 0;
 		this.tipoAlimentacion = " ";
-		this.horasSueno = " ";
+		this.horasSueno = 0;
 		
 	}
 	
-	AnimalesTerrestres (String nombre, String paisOrigen, String fechaIngreso, int cantidadPatas, String tipoAlimentacion, String horasSueno) {
+	AnimalesTerrestres (String nombre, String paisOrigen, String fechaIngreso, int cantidadPatas, String tipoAlimentacion, int horasSueno) {
 		super(nombre, paisOrigen, fechaIngreso);
 		this.cantidadPatas = cantidadPatas;
 		this.tipoAlimentacion = tipoAlimentacion;
@@ -37,11 +37,11 @@ public class AnimalesTerrestres extends Animales {
 		this.tipoAlimentacion = tipoAlimentacion;
 	}
 
-	public String getHorasSueno() {
+	public int getHorasSueno() {
 		return horasSueno;
 	}
 
-	public void setHorasSueno(String horasSueno) {
+	public void setHorasSueno(int horasSueno) {
 		this.horasSueno = horasSueno;
 	}
 
